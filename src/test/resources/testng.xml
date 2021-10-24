@@ -13,16 +13,18 @@
 		</classes>
 	</test>
 
+	<test name="TestAutoIT">
+		<classes>
+			<class name="com.amz.testcases.AutoITFileupload" />
+		</classes>
+	</test>
+
 	<test name="TestComputer">
 		<classes>
 			<class name="com.amz.testcases.AllPageTest" />
 		</classes>
 	</test>
 
-	<test name="TestAutoIT">
-		<classes>			
-			<class name="com.amz.testcases.AutoITFileupload" />
-		</classes>
-	</test>
+
 
 </suite> 

@@ -19,7 +19,7 @@ public class AutoITFileupload extends BaseTest{
 		Thread.sleep(2000);
 		
 		Runtime.getRuntime().exec("C:\\Users\\DauG\\Desktop\\fileupload.exe");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.quit();
 	}
 
