@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+
+	<listeners>
+		<listener class-name="com.amz.listeners.CustomListener"></listener>
+	</listeners>
+
+
+	<test name="TestwindowTab">
+		<classes>
+			<class name="com.amz.testcases.WindowHandlingTest" />
+		</classes>
+	</test>
+
+	<test name="TestComputer">
+		<classes>
+			<class name="com.amz.testcases.AllPageTest" />
+		</classes>
+	</test>
+
+	<test name="TestAutoIT">
+		<classes>			
+			<class name="com.amz.testcases.AutoITFileupload" />
+		</classes>
+	</test>
+
+</suite> 
