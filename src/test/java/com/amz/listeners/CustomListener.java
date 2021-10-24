@@ -46,7 +46,7 @@ public class CustomListener implements ITestListener {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		test.addScreenCaptureFromPath(System.getProperty("user.dir") + "/reports/"+testname+".png", "Error Screenshot");
+		test.addScreenCaptureFromPath(System.getProperty("user.dir") + "\\reports\\"+testname+".png", "Error Screenshot");
 		test.log(Status.FAIL, "Test failed : "+testname);
 		test.fail(result.getThrowable());
 	}

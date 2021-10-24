@@ -66,7 +66,7 @@ public class BaseTest {
 	public void getSS(WebDriver driver, String name) {
 
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File dest = new File(System.getProperty("user.dir") + "/reports/" + name + ".png");
+		File dest = new File(System.getProperty("user.dir") + "\\reports\\" + name + ".png");
 
 		try {
 			FileUtils.copyFile(screenshotFile, dest);
@@ -79,7 +79,6 @@ public class BaseTest {
 	@AfterTest
 	public void closeBrowser() throws InterruptedException {
 		System.out.println(driver.getTitle());
-		Thread.sleep(3000);
 		driver.quit();
 
 	}
